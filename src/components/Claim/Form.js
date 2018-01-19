@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Question from './Question';
 import css from './Form.css';
 import gCss from '../../index.css';
 import data from './data.json';
@@ -9,25 +10,21 @@ export default class Form extends Component {
     this.state = {
       page: data.questions[0].id,
     };
-    this.nextPage = this.nextPage.bind(this);
-    this.previousPage = this.previousPage.bind(this);
-  }
-
-  nextPage() {
-    this.setState({ page: this.state.page + 1 });
-  }
-
-  previousPage() {
-    this.setState({ page: this.state.page - 1 });
   }
 
   render() {
     const { page } = this.state;
-
+    const question = data.questions.find(q => q.id === page);
+    console.log(question);
     return (
       <div className={gCss.card}>
         <h1>Claim</h1>
-
+        <Question
+          label={question.text}
+          type={question.type}
+          name={question.id}
+          onSubmit={() => this.setState({ page: question.next })}
+        />
         {/* {page === 1 && <WizardFormFirstPage onSubmit={this.nextPage} />}
         {page === 2 && (
           <WizardFormSecondPage
