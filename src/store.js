@@ -4,10 +4,12 @@
 
 import { createStore, combineReducers } from 'redux';
 import { reducer as formReducer } from 'redux-form';
+import answers from './reducers/answersReducer';
 
 export default function store() {
   const reducers = {
     form: formReducer,
+    answers,
   };
 
   const store = createStore(

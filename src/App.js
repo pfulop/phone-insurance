@@ -6,6 +6,7 @@ import 'react-day-picker/lib/style.css?raw';
 import createNewStore from './store';
 import Home from './components/Home/Home';
 import Form from './components/Claim/Form';
+import Finish from './components/Finish/Finish';
 
 const store = createNewStore();
 
@@ -20,6 +21,7 @@ class App extends Component {
             </header>
             <Route path="/" exact component={Home} />
             <Route path="/start-claim" exact component={Form} />
+            <Route path="/finish" exact component={Finish} />
           </div>
         </BrowserRouter>
       </Provider>
