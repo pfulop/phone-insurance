@@ -2,12 +2,10 @@ import React from 'react';
 import { reduxForm, getFormValues } from 'redux-form';
 import { connect } from 'react-redux';
 import dateformat from 'dateformat';
-import gCss from '../../index.css';
 import css from './Form.css';
 import Answer from '../Answer/Answer';
 
 const getAnswers = (vals, data, toQuestion) => {
-  console.log(vals);
   return Object.keys(vals).map(k => {
     const answer = data.questions.find(({ id }) => id === k);
     const val =
@@ -27,9 +25,9 @@ const getAnswers = (vals, data, toQuestion) => {
 
 const Confirm = ({ formVals, handleSubmit, data, setPage }) => (
   <form onSubmit={handleSubmit}>
-    <div>
+    <div className={css.buttonWrapper}>
       {getAnswers(formVals, data, setPage)}
-      <button type="submit" className="next">
+      <button type="submit" className={css.nextButton}>
         Finish
       </button>
     </div>

@@ -21,7 +21,7 @@ ShallowWrapper {
         <div
           className={undefined}
 >
-          Don't panic we've got you covered.
+          Don't panic we have got you covered.
 </div>,
         <div
           className={undefined}
@@ -32,6 +32,10 @@ ShallowWrapper {
           className={undefined}
 >
           Ready?
+</div>,
+        <div
+          className={undefined}
+>
           <Link
                     className={undefined}
                     replace={false}
@@ -50,11 +54,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Don't panic we've got you covered.",
+          "children": "Don't panic we have got you covered.",
           "className": undefined,
         },
         "ref": null,
-        "rendered": "Don't panic we've got you covered.",
+        "rendered": "Don't panic we have got you covered.",
         "type": "div",
       },
       Object {
@@ -74,36 +78,42 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
-            "Ready?",
-            <Link
-              className={undefined}
-              replace={false}
-              to="/start-claim"
->
-              Let's start
-</Link>,
-          ],
+          "children": "Ready?",
           "className": undefined,
         },
         "ref": null,
-        "rendered": Array [
-          "Ready?",
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "Let's start",
-              "className": undefined,
-              "replace": false,
-              "to": "/start-claim",
-            },
-            "ref": null,
-            "rendered": "Let's start",
-            "type": [Function],
+        "rendered": "Ready?",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Link
+            className={undefined}
+            replace={false}
+            to="/start-claim"
+>
+            Let's start
+</Link>,
+          "className": undefined,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Let's start",
+            "className": undefined,
+            "replace": false,
+            "to": "/start-claim",
           },
-        ],
+          "ref": null,
+          "rendered": "Let's start",
+          "type": [Function],
+        },
         "type": "div",
       },
     ],
@@ -119,7 +129,7 @@ ShallowWrapper {
           <div
             className={undefined}
 >
-            Don't panic we've got you covered.
+            Don't panic we have got you covered.
 </div>,
           <div
             className={undefined}
@@ -130,6 +140,10 @@ ShallowWrapper {
             className={undefined}
 >
             Ready?
+</div>,
+          <div
+            className={undefined}
+>
             <Link
                         className={undefined}
                         replace={false}
@@ -148,11 +162,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Don't panic we've got you covered.",
+            "children": "Don't panic we have got you covered.",
             "className": undefined,
           },
           "ref": null,
-          "rendered": "Don't panic we've got you covered.",
+          "rendered": "Don't panic we have got you covered.",
           "type": "div",
         },
         Object {
@@ -172,36 +186,42 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              "Ready?",
-              <Link
-                className={undefined}
-                replace={false}
-                to="/start-claim"
->
-                Let's start
-</Link>,
-            ],
+            "children": "Ready?",
             "className": undefined,
           },
           "ref": null,
-          "rendered": Array [
-            "Ready?",
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "Let's start",
-                "className": undefined,
-                "replace": false,
-                "to": "/start-claim",
-              },
-              "ref": null,
-              "rendered": "Let's start",
-              "type": [Function],
+          "rendered": "Ready?",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Link
+              className={undefined}
+              replace={false}
+              to="/start-claim"
+>
+              Let's start
+</Link>,
+            "className": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Let's start",
+              "className": undefined,
+              "replace": false,
+              "to": "/start-claim",
             },
-          ],
+            "ref": null,
+            "rendered": "Let's start",
+            "type": [Function],
+          },
           "type": "div",
         },
       ],

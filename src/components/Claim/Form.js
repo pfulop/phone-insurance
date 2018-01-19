@@ -7,6 +7,7 @@ import Confirm from './Confirm';
 import { addAnswer } from '../../actions/answers';
 import { reset } from 'redux-form';
 import { connect } from 'react-redux';
+import dateformat from 'dateformat';
 
 class Form extends Component {
   constructor() {
@@ -19,7 +20,15 @@ class Form extends Component {
   }
 
   onSubmit(formVals) {
-    const answers = data.questions.map(q => ({ ...q, reply: formVals[q.id] }));
+    const answers = data.questions.map(q => {
+      const ans = formVals[q.id];
+      const val =
+        ans instanceof Date && !isNaN(ans.valueOf())
+          ? dateformat(ans, 'dd.mm. yyyy')
+          : ans === true ? 'yes' : ans === false ? 'no' : ans;
+
+      return { ...q, reply: val };
+    });
     this.props.addAnswer(answers);
     this.props.reset();
     this.props.history.push('/finish');
@@ -38,7 +47,7 @@ class Form extends Component {
     const question = data.questions.find(q => q.id === page);
     return (
       <div className={gCss.card}>
-        <h1>Claim</h1>
+        <h1 className={css.title}>Claim form</h1>
         {question && (
           <Question
             initialValues={this.getInitial()}

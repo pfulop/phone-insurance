@@ -1,9 +1,8 @@
 .appHeader {
   text-align: center;
-  background-color: #4e8098;
+  background-color: #011c27;
   padding: 4px;
   color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (min-width: 480px) {
@@ -11,4 +10,9 @@
     margin-bottom: 16px;
     padding: 16px;
   }
+}
+
+.cardWrapper {
+  display: flex;
+  justify-content: center;
 }

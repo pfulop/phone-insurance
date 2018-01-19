@@ -1,11 +1,19 @@
 import React from 'react';
+import css from '../Form.css';
 
 const renderField = ({ input, label, type, meta: { touched, error } }) => (
-  <div>
-    <label>{label}</label>
+  <div className={css.questionArea}>
+    <label className={css.label}>{label}</label>
     <div>
-      <input {...input} placeholder={label} type={type} />
-      {touched && error && <span>{error}</span>}
+      <input className={css.input} {...input} type={type} />
+      {
+        <span
+          style={{ visibility: touched && error ? 'visible' : 'hidden' }}
+          className={css.error}
+        >
+          {error}
+        </span>
+      }
     </div>
   </div>
 );

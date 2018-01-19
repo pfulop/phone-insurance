@@ -18,9 +18,11 @@ class App extends Component {
             <header className={css.appHeader}>
               <h1 className="App-title">Phone insurance claim</h1>
             </header>
-            <Route path="/" exact component={Home} />
-            <Route path="/start-claim" exact component={Form} />
-            <Route path="/finish" exact component={Finish} />
+            <div className={css.cardWrapper}>
+              <Route path="/" exact component={Home} />
+              <Route path="/start-claim" exact component={Form} />
+              <Route path="/finish" exact component={Finish} />
+            </div>
           </div>
         </BrowserRouter>
       </Provider>

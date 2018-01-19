@@ -26,21 +26,27 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <div>
+        <div
+          className={undefined}
+>
            
           Are you sure ?
            
 </div>,
-        <div>
+        <div
+          className={undefined}
+>
           yes
 </div>,
         <button
+          className={undefined}
           onClick={[Function]}
           type="button"
 >
           Edit
 </button>,
       ],
+      "className": undefined,
     },
     "ref": null,
     "rendered": Array [
@@ -54,6 +60,7 @@ ShallowWrapper {
             "Are you sure ?",
             " ",
           ],
+          "className": undefined,
         },
         "ref": null,
         "rendered": Array [
@@ -69,6 +76,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "yes",
+          "className": undefined,
         },
         "ref": null,
         "rendered": "yes",
@@ -80,6 +88,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Edit",
+          "className": undefined,
           "onClick": [Function],
           "type": "button",
         },
@@ -97,21 +106,27 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <div>
+          <div
+            className={undefined}
+>
              
             Are you sure ?
              
 </div>,
-          <div>
+          <div
+            className={undefined}
+>
             yes
 </div>,
           <button
+            className={undefined}
             onClick={[Function]}
             type="button"
 >
             Edit
 </button>,
         ],
+        "className": undefined,
       },
       "ref": null,
       "rendered": Array [
@@ -125,6 +140,7 @@ ShallowWrapper {
               "Are you sure ?",
               " ",
             ],
+            "className": undefined,
           },
           "ref": null,
           "rendered": Array [
@@ -140,6 +156,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "yes",
+            "className": undefined,
           },
           "ref": null,
           "rendered": "yes",
@@ -151,6 +168,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Edit",
+            "className": undefined,
             "onClick": [Function],
             "type": "button",
           },
@@ -197,16 +215,21 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <div>
+        <div
+          className={undefined}
+>
            
           Are you sure ?
            
 </div>,
-        <div>
+        <div
+          className={undefined}
+>
           yes
 </div>,
         undefined,
       ],
+      "className": undefined,
     },
     "ref": null,
     "rendered": Array [
@@ -220,6 +243,7 @@ ShallowWrapper {
             "Are you sure ?",
             " ",
           ],
+          "className": undefined,
         },
         "ref": null,
         "rendered": Array [
@@ -235,6 +259,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "yes",
+          "className": undefined,
         },
         "ref": null,
         "rendered": "yes",
@@ -251,16 +276,21 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <div>
+          <div
+            className={undefined}
+>
              
             Are you sure ?
              
 </div>,
-          <div>
+          <div
+            className={undefined}
+>
             yes
 </div>,
           undefined,
         ],
+        "className": undefined,
       },
       "ref": null,
       "rendered": Array [
@@ -274,6 +304,7 @@ ShallowWrapper {
               "Are you sure ?",
               " ",
             ],
+            "className": undefined,
           },
           "ref": null,
           "rendered": Array [
@@ -289,6 +320,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "yes",
+            "className": undefined,
           },
           "ref": null,
           "rendered": "yes",

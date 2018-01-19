@@ -23,3 +23,85 @@
 .startClaim:hover {
   box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2);
 }
+
+.label {
+  line-height: 32px;
+}
+
+.input {
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 18px;
+}
+
+.error {
+  padding: 16px;
+  line-height: 24px;
+  border-radius: 4px;
+  color: darkred;
+}
+
+.questionArea {
+  margin: 16px 0;
+}
+
+.nextButton {
+  background-color: #4e8098;
+  text-decoration: none;
+  text-transform: none;
+  color: white;
+  padding: 4px 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+  border-radius: 4px;
+  border: none;
+  font-size: 24px;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.nextButton:hover {
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2);
+}
+
+.buttonWrapper {
+  margin-top: 8px;
+  text-align: right;
+}
+
+.title {
+  margin-bottom: 16px;
+}
+
+.checkboxButton {
+  margin: 0;
+  margin-top: 2px;
+  width: 25px;
+  height: 25px;
+  appearance: none;
+  position: relative;
+  border: 2px solid black;
+  border-radius: 7px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.checkboxButton:after {
+  font-size: 29px;
+  position: absolute;
+  transform: scale(0);
+  background-color: transparent;
+  border-radius: 50px;
+  transition: all 175ms ease-in;
+  margin: -7px 0px 0 0px;
+}
+.checkboxButton:checked:after {
+  content: '✓';
+  color: black;
+  background-color: white;
+  border-radius: 0;
+  transform: scale(1.3);
+}
+.checkboxButton:focus {
+  outline: 0;
+}

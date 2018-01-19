@@ -1,6 +1,5 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
-import gCss from '../../index.css';
 import css from './Form.css';
 import Text from './Fields/Text';
 import Date from './Fields/Date';
@@ -32,11 +31,10 @@ const Question = ({ handleSubmit, name, type, label }) => (
       component={getType(type)}
       label={label}
     />
-    <div>
-      <button type="submit" className="next">
+    <div className={css.buttonWrapper}>
+      <button className={css.nextButton} type="submit">
         Next
       </button>
-      {console.log(type)}
     </div>
   </form>
 );
