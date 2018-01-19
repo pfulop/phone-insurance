@@ -59,6 +59,7 @@
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,mjs}"
     ],
+    "setupTestFrameworkScriptFile": "<rootDir>/src/setupTests.js",
     "setupFiles": [
       "<rootDir>/config/polyfills.js"
     ],
@@ -96,5 +97,10 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "redux-test-utils": "^0.2.2"
   }
 }

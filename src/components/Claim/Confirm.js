@@ -4,23 +4,23 @@ import { connect } from 'react-redux';
 import dateformat from 'dateformat';
 import gCss from '../../index.css';
 import css from './Form.css';
+import Answer from '../Answer/Answer';
 
 const getAnswers = (vals, data, toQuestion) => {
   console.log(vals);
   return Object.keys(vals).map(k => {
     const answer = data.questions.find(({ id }) => id === k);
+    const val =
+      vals[k] instanceof Date && !isNaN(vals[k].valueOf())
+        ? dateformat(vals[k], 'dd.mm. yyyy')
+        : vals[k] === true ? 'yes' : vals[k] === false ? 'no' : vals[k];
     return (
-      <div key={k}>
-        <div> {answer.text} </div>
-        <div>
-          {vals[k] instanceof Date && !isNaN(vals[k].valueOf())
-            ? dateformat(vals[k], 'dd.mm. yyyy')
-            : vals[k]}{' '}
-        </div>
-        <button onClick={() => toQuestion(k)} type="button">
-          Edit
-        </button>
-      </div>
+      <Answer
+        key={k}
+        answer={answer}
+        val={val}
+        toQuestion={() => toQuestion(k)}
+      />
     );
   });
 };

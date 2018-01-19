@@ -1,0 +1,219 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home should render correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className={undefined}
+>
+          Don't panic we've got you covered.
+</div>,
+        <div
+          className={undefined}
+>
+          Fill out the form and get your compensation as fast as possible.
+</div>,
+        <div
+          className={undefined}
+>
+          Ready?
+          <Link
+                    className={undefined}
+                    replace={false}
+                    to="/start-claim"
+          >
+                    Let's start
+          </Link>
+</div>,
+      ],
+      "className": undefined,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Don't panic we've got you covered.",
+          "className": undefined,
+        },
+        "ref": null,
+        "rendered": "Don't panic we've got you covered.",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Fill out the form and get your compensation as fast as possible.",
+          "className": undefined,
+        },
+        "ref": null,
+        "rendered": "Fill out the form and get your compensation as fast as possible.",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Ready?",
+            <Link
+              className={undefined}
+              replace={false}
+              to="/start-claim"
+>
+              Let's start
+</Link>,
+          ],
+          "className": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          "Ready?",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Let's start",
+              "className": undefined,
+              "replace": false,
+              "to": "/start-claim",
+            },
+            "ref": null,
+            "rendered": "Let's start",
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className={undefined}
+>
+            Don't panic we've got you covered.
+</div>,
+          <div
+            className={undefined}
+>
+            Fill out the form and get your compensation as fast as possible.
+</div>,
+          <div
+            className={undefined}
+>
+            Ready?
+            <Link
+                        className={undefined}
+                        replace={false}
+                        to="/start-claim"
+            >
+                        Let's start
+            </Link>
+</div>,
+        ],
+        "className": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Don't panic we've got you covered.",
+            "className": undefined,
+          },
+          "ref": null,
+          "rendered": "Don't panic we've got you covered.",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Fill out the form and get your compensation as fast as possible.",
+            "className": undefined,
+          },
+          "ref": null,
+          "rendered": "Fill out the form and get your compensation as fast as possible.",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Ready?",
+              <Link
+                className={undefined}
+                replace={false}
+                to="/start-claim"
+>
+                Let's start
+</Link>,
+            ],
+            "className": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            "Ready?",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Let's start",
+                "className": undefined,
+                "replace": false,
+                "to": "/start-claim",
+              },
+              "ref": null,
+              "rendered": "Let's start",
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

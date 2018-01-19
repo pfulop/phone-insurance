@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Route } from 'react-router-dom';
 import css from './App.css';
-import 'react-day-picker/lib/style.css?raw';
 import createNewStore from './store';
 import Home from './components/Home/Home';
 import Form from './components/Claim/Form';
