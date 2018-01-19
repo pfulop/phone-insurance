@@ -15,6 +15,7 @@ class Form extends Component {
       page: data.questions[0].id,
     };
     this.onSubmit = this.onSubmit.bind(this);
+    this.getInitial = this.getInitial.bind(this);
   }
 
   onSubmit(formVals) {
@@ -22,6 +23,14 @@ class Form extends Component {
     this.props.addAnswer(answers);
     this.props.reset();
     this.props.history.push('/finish');
+  }
+
+  getInitial() {
+    const initial = {};
+    data.questions.forEach(
+      q => (initial[q.id] = q.type === 'boolean' ? false : null),
+    );
+    return initial;
   }
 
   render() {
@@ -32,6 +41,7 @@ class Form extends Component {
         <h1>Claim</h1>
         {question && (
           <Question
+            initialValues={this.getInitial()}
             label={question.text}
             type={question.type}
             name={question.id}

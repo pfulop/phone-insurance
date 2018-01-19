@@ -6,6 +6,7 @@ import gCss from '../../index.css';
 import css from './Form.css';
 
 const getAnswers = (vals, data, toQuestion) => {
+  console.log(vals);
   return Object.keys(vals).map(k => {
     const answer = data.questions.find(({ id }) => id === k);
     return (
